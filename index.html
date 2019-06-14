@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatiable" content="ie=edge">
+    <!--Font awesome link-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrap Theme</title>
+</head>
+
+
+<body>
+<!--############################## NEW NAVBAR ##############################-->
+
+<nav class="navbar navbar-expand-md navbar-light fixed-top py-4"> <!-- NAV, Changes at Med screen, light color, fixed top, padding of 4 -->
+    <div class="container"> <!-- WRAPS ALL THE DIVS FOR CORRECT SPACING -->
+<!-- NAV LOGO -->
+        <a href="#home" class="navbar-brand">
+            <img src="images/logo_temp.png" width="50" height="50" alt="">
+            <h3 class="d-inline align-middle">CFTS</h3>
+        </a>
+<!-- COLLAPSE NAV LINKS INTO HAMBURGER ICON -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>                   <!--HOME LINK-->
+                </li>
+                <li class="nav-item">
+                    <a href="#url_shortner" class="nav-link">URL Shortner</a>   <!--URL SHORTNER LINK-->
+                </li>
+<!--DROP DOWN STARTS HERE FOR NAV-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Resources                                                   <!--RESOURCES-->
+                    </a>
+                                                                                <!--LINKS INSIDE DROPDOWN-->
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                    <!--ADD FILE LOCATION FOR FILES-->
+                            <a class="dropdown-item" href="files/test file.txt" download="Tetragraph">Tetragraph</a>
+                            <a class="dropdown-item" href="files/test file.txt" download="Cross Domain User Guide">Cross Domain User Guide</a>
+                            <a class="dropdown-item" href="files/test file.txt" download="DoDIIS One-way Transfer">DoDIIS One-way Transfer</a>
+                        </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--############################## END NEW NAV BAR ##############################-->
+
+
+
+ <!--Cards Start Here -->
+<section id="boxes" class="py-5">
+    <div class="container">
+        <div class="row">
+
+            <!--Choose Files-->
+            <div class="col-lg-4">
+                <div class="card text-center border-secondary mb-resp">
+                    <div class="card-body">
+                        <h3 class="text-gray-dark">Add Files Here</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            At consectetur deleniti deserunt eos
+                            exercitationem fuga hic placeat quis, reprehenderit voluptatem?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Choose Networks-->
+            <div class="col-lg-4">
+                <div class="card text-center border-secondary mb-resp">
+                    <div class="card-body">
+                        <h3 class="text-gray-dark">Choose Network</h3>
+                        <div class="chkbox">
+                            <form action="/action_page.php">
+                                <input type="checkbox" name="vehicle1" value="nipr">  NIPR
+                                <br>
+                                <input type="checkbox" name="vehicle2" value="bices">  BICES
+                                <br>
+                                <input type="checkbox" name="vehicle1" value="cpn_are">  CPN-ARE
+                                <br>
+                                <input type="checkbox" name="vehicle2" value="cpn_jor">  CPN-JOR
+                                <br>
+                                <input type="checkbox" name="vehicle1" value="cpn_kwt">  CPN-KWT
+                                <br>
+                                <input type="checkbox" name="vehicle2" value="cpn_qat">  CPN-QAT
+                                <br>
+                                <input type="checkbox" name="vehicle1" value="cpn_sau">  CPN-SAU
+                                <br>
+                                <input type="checkbox" name="vehicle2" value="cpn_x">  CPN-X
+                                <br>
+                                <input type="checkbox" name="vehicle1" value="centrixs_swa">  CENTRIXS SWA
+                                <br><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Add Email-->
+            <div class="col-lg-4">
+                <div class="card text-center border-secondary mb-resp">
+                    <div class="card-body">
+                        <h3 class="text-gray-dark">Add Destination Email</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            At consectetur deleniti deserunt eos
+                            exercitationem fuga hic placeat quis, reprehenderit voluptatem?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Submit Button starts here-->
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 mt-5 text-center">
+                <a href="index.html" class="btn btn-secondary btn-block" role="button" aria-pressed="true">Submit</a>
+                <!--<a href="index.html" class="btn btn-secondary btn-block" role="button" aria-pressed="true">Submit</a>-->
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ########################   Contact Us Footer Starts Here   ######################### -->
+ <div class="container">
+
+    <!-- MODAL TRIGGER -->
+    <a class="nav-link active" data-toggle="modal" data-target="#myModal" href="#" ></a>  <!-- WORK AROUND REMOVE LINK TEXT -->
+
+    <!-- MODAL -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">CFTS Contact Information</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+             You can contact the CFTS team via: <br>
+             Email: centcom.macdill.centcom-hq.mbx.combined-im@mail.smil.mil <br>
+             Phone: (813) 529-3700, 3752, 3718, 3673 or 3477
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <br>
+    <br>
+
+
+     
+<!--FIXED BOTTOM IS CAUSING THE ISSUE SO FAR-->
+    <section id="contact" class="bg-light py-4 fixed-bottom">
+        <div class="container">
+            <!-- MODAL TRIGGER -->
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" data-toggle="modal" data-target="#myModal" >Contact Us</a>
+            </li>
+          </ul>
+
+            <!-- MODAL -->
+            <div class="modal" id="myModalClone">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">CFTS Contact Information</h5>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    This is not being called
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+  </div>
+
+
+
+<!-- ###################### DONT FORGET TO ADD LIBS TO ROOT ################################# -->
+<!--ADD JQUERY LIBs TO ROOT-->
+<!--ADD POPPER LIB? -->
+
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
+
