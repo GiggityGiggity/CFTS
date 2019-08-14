@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/bootstrap.css"> <!-- 2ND TAB-->
+    <link rel="stylesheet" href="css/style.css"> <!-- 3RD TAB-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script> <!-- 4TH TAB-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>-->
+
+</head>
+<body>
+
+<!--############################## NAVBAR ##############################-->
+<nav class="navbar navbar-expand-md navbar-light fixed-top py-4"> <!-- NAV, Changes at Med screen, light color, fixed top, padding of 4 -->
+    <div class="container"> <!-- WRAPS ALL THE DIVS FOR CORRECT SPACING -->
+        <a href="#home" class="navbar-brand"> <!-- NAV LOGO -->
+            <img src="images/logo_temp.png" width="50" height="50" alt="">
+            <h3 class="d-inline align-middle">CFTS</h3>
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"> <!-- COLLAPSE NAV LINKS INTO HAMBURGER ICON -->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>                   <!--HOME LINK-->
+                </li>
+                <li class="nav-item">
+                    <a href="#url_shortner" class="nav-link">URL Shortner</a>   <!--URL SHORTNER LINK-->
+                </li>
+                <li class="nav-item dropdown"> <!--DROP DOWN STARTS HERE FOR NAV-->
+                    <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Resources                                                   <!--RESOURCES-->
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"> <!--LINKS INSIDE DROPDOWN-->
+                        <a class="dropdown-item" href="files/test file.txt" download="Tetragraph">Tetragraph</a>
+                        <a class="dropdown-item" href="files/test file.txt" download="Cross Domain User Guide">Cross Domain User Guide</a>
+                        <a class="dropdown-item" href="files/test file.txt" download="DoDIIS One-way Transfer">DoDIIS One-way Transfer</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--############################## END NAV BAR ##############################-->
+
+
+
+
+
+<div class="container">
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
